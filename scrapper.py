@@ -35,6 +35,12 @@ async def scrape(url: str):
 
 
 if __name__ == "__main__":
+    
+    file_paths = ("./full_scrape.txt", "./data_dir/description.txt")
+    if os.path.exists(file_paths[0]):
+        os.remove(file_paths[0])
+    if os.path.exists(file_paths[1]):
+        os.remove(file_paths[1])
 
     base_url = "https://cryptorank.io/all-coins-list"
 
