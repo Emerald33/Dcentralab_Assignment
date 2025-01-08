@@ -37,6 +37,9 @@ This project includes an efficient web scraper and a RAG (Retrieval-Augmented Ge
 - Use the provided `Makefile` for easy setup. Run the following command in the terminal:
   ```bash
   make all
+  ```
+  If the virtual environment doesn't activate after `make all`, try running `poetry env activate` on the terminal
+  this would provide the activation script. Use that script to activate the virtual environment.
 
 3. **Create a `.env` file**: 
    - Use the `.env_example` file as a reference.
