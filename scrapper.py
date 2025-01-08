@@ -35,7 +35,7 @@ async def scrape(url: str):
 
 
 if __name__ == "__main__":
-    
+
     file_paths = ("./full_scrape.txt", "./data_dir/description.txt")
     if os.path.exists(file_paths[0]):
         os.remove(file_paths[0])
@@ -112,9 +112,4 @@ if __name__ == "__main__":
             f.write(str(json_info) + "\n\n")
         with open("./data_dir/description.txt", "a") as f:
             f.write(str(coin_desc) + "\n\n")
-
-
-
-
-
 
